@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="543.0" prefWidth="240.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.deber.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label alignment="CENTER" contentDisplay="RIGHT" text="Título" textAlignment="CENTER">
+      <font>
+         <Font name="Arial Black" size="12.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="-15.0" />
+      </VBox.margin>
+   </Label>
+   <TextArea fx:id="txtMensaje" prefHeight="11.0" prefWidth="200.0" />
+   <Label text="Código">
+      <VBox.margin>
+         <Insets bottom="-15.0" />
+      </VBox.margin>
+      <font>
+         <Font name="Arial Black" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txtCodigo" />
+   <Label text="Mensaje">
+      <font>
+         <Font name="Arial Black" size="12.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="-15.0" />
+      </VBox.margin>
+   </Label>
+   <TextField fx:id="txtTitulo" />
+   <Label text="Pila de objetos">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <font>
+         <Font name="Arial Black" size="12.0" />
+      </font>
+   </Label>
+   <TextArea fx:id="txtMostrar" />
+   <HBox prefHeight="100.0" prefWidth="200.0" alignment="CENTER">
+      <children>
+         <Button fx:id="btnPeek" mnemonicParsing="false" onAction="#onPeek" prefHeight="25.0" prefWidth="59.0" text="Peek" />
+         <Button fx:id="btnEliminar" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClick" text="Eliminar">
+            <HBox.margin>
+               <Insets left="15.0" />
+            </HBox.margin></Button>
+         <Button fx:id="btnRegistrar" alignment="CENTER" mnemonicParsing="false" onAction="#Click" text="Registrar">
+            <HBox.margin>
+               <Insets left="15.0" />
+            </HBox.margin></Button>
+      </children>
+   </HBox>
+   <BorderPane prefHeight="49.0" prefWidth="200.0" />
+</VBox>
